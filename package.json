@@ -2,7 +2,7 @@
   "name": "css-prefixer-app",
   "productName": "css-prefixer-app",
   "version": "1.0.0",
-  "description": "My Electron application description",
+  "description": "Small desktop app to help you prefix your CSS.",
   "main": ".webpack/main",
   "scripts": {
     "start": "electron-forge start",
