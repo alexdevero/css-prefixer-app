@@ -79,6 +79,7 @@
     "eslint-plugin-import": "^2.20.0",
     "file-loader": "^6.2.0",
     "fork-ts-checker-webpack-plugin": "^5.0.14",
+    "monaco-editor-webpack-plugin": "^2.0.0",
     "node-loader": "^1.0.1",
     "style-loader": "^1.2.1",
     "ts-loader": "^8.0.2",
@@ -89,6 +90,7 @@
     "beautify": "^0.0.8",
     "bootstrap": "^4.5.3",
     "electron-squirrel-startup": "^1.0.0",
+    "monaco-editor": "^0.21.2",
     "postcss": "^8.1.4",
     "postcss-sorting": "^6.0.0"
   }
