@@ -1,13 +1,27 @@
-import { app, BrowserWindow } from 'electron'
+import { app, BrowserWindow, Tray } from 'electron'
+
+const platform = require('os').platform()
+const path = require('path')
 
 declare const MAIN_WINDOW_WEBPACK_ENTRY: any
 
 let mainWindow: BrowserWindow
 
+let trayIcon: string
+let appIcon: Tray
+
 // Handle creating/removing shortcuts on Windows when installing/uninstalling.
 if (require('electron-squirrel-startup')) { // eslint-disable-line global-require
   app.quit()
 }
+
+// Determine appropriate icon for platform
+// console.log(path.join(__dirname, 'images/favicon.png'))
+// if (platform == 'darwin') {
+//   trayIcon = path.join(__dirname, 'images/favicon.png')
+// } else if (platform == 'win32') {
+//   trayIcon = path.join(__dirname, 'images/favicon.ico')
+// }
 
 const createWindow = (): void => {
   // Create the browser window.
@@ -15,11 +29,15 @@ const createWindow = (): void => {
     height: 600,
     width: 800,
     show: false,
+    // icon: trayIcon,
     title: 'CSS Prefixer',
     webPreferences: {
       nodeIntegration: true
     }
   })
+
+  // Create tray icon
+  // appIcon = new Tray(trayIcon)
 
   // and load the index.html of the app.
   mainWindow.loadURL(MAIN_WINDOW_WEBPACK_ENTRY)
