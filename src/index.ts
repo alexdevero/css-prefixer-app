@@ -15,6 +15,7 @@ const createWindow = (): void => {
     height: 600,
     width: 800,
     show: false,
+    title: 'CSS Prefixer',
     webPreferences: {
       nodeIntegration: true
     }
