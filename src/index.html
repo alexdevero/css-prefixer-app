@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+
+    <title>CSS Prefixer</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <header>
+            <h1 class="h4 mt-1">CSS Prefixer</h1>
+        </header>
+
+        <div class=" main-content">
+          <div class="div pt-1 pb-1">
+            <button id="process-btn" class="btn btn-primary btn-sm">Process CSS</button>
+            <button id="prettify-btn" class="btn btn-secondary btn-sm d-none">Prettify input CSS</button>
+          </div>
+
+          <div class="row pt-2">
+            <div class="col-md-6">
+              <div id="input-css" class="input-css rounded-sm" name="input-css"></div>
+            </div>
+
+            <div class="col-md-6">
+              <textarea id="result-box" class="result-box rounded-sm" name="result-box"></textarea>
+            </div>
+          </div>
+        </div>
+
+        <footer class="fixed-bottom py-2 px-2 border-left-0 border-right-0 border-bottom-0 border border-light">
+          <div class="">
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-text">Browserlist:</div>
+              </div>
+
+              <input type="text" class="form-control" id="browserlist-input" value="ie >= 10, last 7 versions">
+            </div>
+          </div>
+        </footer>
+      </div>
+    </main>
+  </body>
+</html>
