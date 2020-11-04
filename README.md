@@ -15,11 +15,11 @@
 
 Small desktop app to help you prefix your CSS.
 
-<p align="center">
+<!-- <p align="center">
   <img src="https://cdn.rawgit.com/alexdevero/css-prefixer-app/master/docs/instatron-screen.png" width="800">
   <br>
   <br>
-</p>
+</p> -->
 
 ### Table of contents
 
