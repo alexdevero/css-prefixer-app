@@ -74,7 +74,7 @@
     "@typescript-eslint/parser": "^4.0.1",
     "copy-webpack-plugin": "^6.2.1",
     "css-loader": "^4.2.1",
-    "electron": "10.2.0",
+    "electron": "11.5.0",
     "eslint": "^7.6.0",
     "eslint-plugin-import": "^2.20.0",
     "file-loader": "^6.2.0",
