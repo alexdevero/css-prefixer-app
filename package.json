@@ -91,7 +91,7 @@
     "bootstrap": "^4.5.3",
     "electron-squirrel-startup": "^1.0.0",
     "monaco-editor": "^0.21.2",
-    "postcss": "^8.2.10",
+    "postcss": "^8.2.13",
     "postcss-sorting": "^6.0.0"
   }
 }
